@@ -1,1 +1,9 @@
 <h1 class= "header">Pass it Down</h1>
+
+<% @items.each do |item| %>
+<div class="booyah-box  col-xs-10 col-xs-offset-1">
+	<h2><%= item.name %></h2><br />
+    <i><%= item.address %></i><br />
+    <p><%= item.description %></p><br />
+</div>
+<% end %>
